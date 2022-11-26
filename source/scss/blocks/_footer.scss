@@ -1,0 +1,168 @@
+.footer {
+    padding-top: 77px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    &-contact {
+        position: relative;
+        top: -20px;
+        display: flex;
+        flex-direction: column;
+        span {
+            padding-right: 25px;
+        }
+        @include tablet {
+            grid-column: span 2;
+            order: 2;
+            padding-left: 15px;
+            grid-gap: 10px;
+            order: 1;
+            top: -30px;
+        }
+        @include mobile {
+            grid-column: span 4;
+            align-items: center;
+            grid-gap: 5px;
+        }
+        &__item {
+            font-family: var(--font-family);
+            font-style: normal;
+            font-weight: 400;
+            font-size: clamp(14px, 1.579vw, 18px);
+            line-height: 160%;
+            color: var(--color-a);
+            @include mobile {
+                text-align: center;
+            }
+
+        }
+        &__telephone {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            grid-gap: 15px;
+            font-family: var(--font-family);
+            font-style: normal;
+            font-weight: 400;
+            font-size: clamp(14px, 1.579vw, 18px);
+            line-height: 150%;
+            text-align: center;
+            color: var(--color-a);
+            transition: all .4s;
+    
+            &:hover {
+                opacity: 0.8;
+            }
+        }    
+    }
+    &-categories {
+        display: flex;
+        flex-direction: column;
+        grid-gap: 20px;
+
+        font-family: var(--font-family);
+        font-style: normal;
+        font-weight: 400;
+        font-size: clamp(14px, 2.105vw, 24px);
+        line-height: 150%;
+        color: var(--color-a);
+
+        @include tablet {
+            order: 1;
+            grid-gap: 10px;
+        }
+        @include mobile {
+            grid-column: span 2;
+            align-items: center;
+            justify-content: center;
+        }
+        &__item {
+            font-family: var(--font-family);
+            font-style: normal;
+            font-weight: 400;
+            font-size: clamp(14px, 1.579vw, 18px);
+            line-height: 150%;
+            color: var(--color-a);
+            &:hover {
+                opacity: 0.8;
+            }
+        }
+    }
+    &-information {
+        display: flex;
+        flex-direction: column;
+        grid-gap: 20px;
+
+        font-family: var(--font-family);
+        font-style: normal;
+        font-weight: 400;
+        font-size: clamp(14px, 2.105vw, 24px);
+        line-height: 150%;
+        color: var(--color-a);
+        @include tablet {
+            grid-gap: 10px;
+        }
+        @include mobile {
+            grid-column: span 2;
+            align-items: center;
+            justify-content: center;
+        }
+        &__item {
+            font-family: var(--font-family);
+            font-style: normal;
+            font-weight: 400;
+            font-size: clamp(14px, 1.579vw, 18px);
+            line-height: 150%;
+            color: var(--color-a);
+
+            &:hover {
+                opacity: 0.8;
+            }
+        }
+    }
+    &-follow {
+        display: flex;
+        flex-direction: column;
+        grid-gap: 45px;
+
+        font-family: var(--font-family);
+        font-style: normal;
+        font-weight: 400;
+        font-size: clamp(18px, 2.105vw, 24px);
+        line-height: 150%;
+        color: var(--color-a);
+        @include tablet {
+            align-items: center;
+            padding-top: 25px;
+            grid-gap: 15px;
+            grid-column: span 4;
+            order: 2;
+        }
+    }
+    &-copyright {
+        font-family: var(--font-family4);
+        font-style: normal;
+        font-weight: 400;
+        font-size: clamp(14px, 1.404vw, 16px);;
+        line-height: 160%;
+        text-align: center;
+        color: var(--color-a);
+
+        position: relative;
+        grid-column: span 4;
+        padding: 76px 0 50px;
+
+        @include tablet {
+            padding: 60px 10px 10px; 
+            order: 4;
+        }
+        &::after {
+            position: absolute;
+            content: '';
+            opacity: 0.4;
+            border: 1px solid var(--color-a);
+            top: 50px;
+            left: 0;
+            width: 100%;
+        }
+    }
+}
