@@ -4,7 +4,7 @@
   align-items: center;
   grid-gap: 26px;
   @include mobile {
-    grid-gap: 15px; 
+    grid-gap: 5px; 
     padding: 0 15px;
   }
   &__title{

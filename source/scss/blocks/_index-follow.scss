@@ -1,13 +1,13 @@
 .index-follow {
-    height: 650px;
     margin-top: 140px;
-    padding: 100px 0;
     background-color: var(--color-e);
-    @include mobile {
-        height: 450px;
-        margin-top: 50px; 
-        padding: 20px 15px;
+    padding: 100px 0;
+    @include tablet {
+        max-height: 450px;
+        margin-top: 30px;
+        padding: 0;
         background-position: top right, top left;
+        background-image: none !important;
     }
 }
 .follow-top {
@@ -17,6 +17,12 @@
     text-align: center;
     justify-content: center;
     grid-gap: 30px;
+
+    @include tablet {
+        background-color: var(--color-e);
+        grid-gap: 10px;
+        padding: 20px 15px;
+    }
     &__link {
         position: relative;
         font-family: var(--font-family);
@@ -35,6 +41,9 @@
             height: 1px;
             border: 1px solid var(--color-d);
             transform: translateX(10%);
+            @include tablet {
+                bottom: -10px;
+            }
         }
 
         &:hover {

@@ -1,7 +1,15 @@
 .index-offer {
     padding-top: 140px;
+    &__box {
+        display: flex;
+        flex-direction: column;
+        grid-gap: 50px;
+    }
     @include tablet {
         padding-top: 50px;
+    }
+    @include mobile {
+        padding-top: 15px;
     }
 }
 .coffee-list {
@@ -13,12 +21,7 @@
         width: 380px;
     }
 }
-.offer-box {
-    padding-top: 60px;
-    @include tablet {
-        padding-top: 30px;
-    }
-}
+
 .offer-main {
     display: flex;
     flex-direction: row;
@@ -31,7 +34,7 @@
 .offer-top {
     display: flex;
     align-items: flex-start;
-    @include mobile {
+    @include tablet {
         align-items: center;
     }
 }

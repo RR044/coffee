@@ -1,7 +1,7 @@
 .index-first {
     position: relative;
     background-color: var(--color-b);
-    background-repeat: no-repeat;
+    background-repeat: repeat-x;
     background-position: top left;
     background-size: auto;
     @include mobile {
@@ -30,9 +30,9 @@
     background-image: url(/img/sectionF/image1.png);
     background-size: auto;
     background-repeat: no-repeat;
-    background-position:100% 100%;
+    background-position: bottom right;
     @include tablet {
-        background-position: bottom right; 
+        background-position: bottom right;
         background-size: 65%;
     }
     @include mobile {
@@ -45,7 +45,9 @@
     display: flex;
     flex-direction: column;
     grid-gap: clamp(15px, 2.193vw, 25px);
-    padding: 0 20px;
+    @include laptop {
+        padding: 0 20px;
+    }
     &__title{
         font-family: var(--font-family2);
         font-style: normal;
@@ -54,13 +56,9 @@
         line-height: 130%;
         text-align: start;
         color: var(--color-a);
-        @include tablet {
-            max-width: 350px;
-        }
         @include mobile {
             text-align: center;
             line-height: 110%;
-            max-width: 610px;
         }
     }
 

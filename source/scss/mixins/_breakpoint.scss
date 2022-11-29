@@ -1,16 +1,16 @@
 /* stylelint-disable */
 
-// @mixin desktop4k {
-//   @media (min-width: (2160px)) {
-//     @content;
-//   }
-// }
 
-// @mixin before-desktop {
-//   @media (min-width: (1640px)) {
-//     @content;
-//   }
-// }
+@mixin laptop {
+  @media (max-width: (1240px)) {
+    @content;
+  }
+}
+@mixin laptop-mini {
+  @media (max-width: (1160px)) {
+    @content;
+  }
+}
 @mixin for-tablet {
   @media (min-width: (1024px)) {
     @content;

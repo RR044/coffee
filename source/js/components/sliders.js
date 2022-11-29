@@ -56,7 +56,7 @@ import Swiper from '../vendor/swiper';
             spaceBetween:10,
           },
           // desktop >= 768
-          768: {
+          1160: {
             slidesPerView: 3,
             spaceBetween: 10,
           },
