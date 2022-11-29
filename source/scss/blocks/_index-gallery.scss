@@ -18,7 +18,7 @@
     align-items: center;
     justify-content: center;
     grid-gap: 30px;
-    @include laptopç {
+    @include laptop {
         padding: 0 15px;
         grid-gap: 20px;
     }
