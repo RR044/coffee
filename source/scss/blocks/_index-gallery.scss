@@ -18,7 +18,7 @@
     align-items: center;
     justify-content: center;
     grid-gap: 30px;
-    @include laptop {
+    @include laptopç {
         padding: 0 15px;
         grid-gap: 20px;
     }
@@ -53,7 +53,7 @@
 
     text-align: center;
     padding: 25px 0;
-    transition: all .4s;
+    transition: all 1s;
 
     &::after {
         position: absolute;
