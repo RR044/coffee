@@ -9,7 +9,7 @@
     width: 145px;
     height: 61px;
 
-    font-family: 'Open Sans';
+    font-family: var(--font-family);
     font-style: normal;
     font-weight: 400;
     font-size: clamp(14px, 1.579vw, 18px);;
