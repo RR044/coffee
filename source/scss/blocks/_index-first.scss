@@ -23,8 +23,8 @@
     }
 }
 .container-mask {
-    padding-top: calc(clamp(10px, 10.526vw, 120px) + var(--header-height));
-    padding-bottom: clamp(40px, 9.649vw, 110px);
+    padding-top: calc(clamp(10px, 8.333vw, 120px) + var(--header-height));
+    padding-bottom: clamp(40px, 7.639vw, 110px);
     max-width: 1600px;
     margin: 0 auto;
     background-image: url(/img/sectionF/image1.png);
@@ -44,7 +44,7 @@
 .first-top {
     display: flex;
     flex-direction: column;
-    grid-gap: clamp(15px, 2.193vw, 25px);
+    grid-gap: clamp(15px, 1.736vw, 25px);
     @include laptop {
         padding: 0 20px;
     }
@@ -52,7 +52,7 @@
         font-family: var(--font-family2);
         font-style: normal;
         font-weight: 600;
-        font-size: clamp(32px, 5.088vw, 58px);
+        font-size: clamp(32px, 4.028vw, 58px);
         line-height: 130%;
         text-align: start;
         color: var(--color-a);
@@ -67,7 +67,7 @@
         font-family: var(--font-family);
         font-style: normal;
         font-weight: 400;
-        font-size: clamp(14px, 1.754vw, 20px);
+        font-size: clamp(14px, 1.389vw, 20px);
         line-height: 160%;
         text-align: start;
         color: var(--color-a);

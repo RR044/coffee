@@ -1,11 +1,9 @@
 .index-follow {
     margin-top: 140px;
     background-color: var(--color-e);
-    padding: 100px 0;
     @include tablet {
         max-height: 450px;
         margin-top: 30px;
-        padding: 0;
         background-position: top right, top left;
         background-image: none !important;
     }
@@ -17,6 +15,7 @@
     text-align: center;
     justify-content: center;
     grid-gap: 30px;
+    padding: 100px 0;
 
     @include tablet {
         background-color: var(--color-e);
@@ -28,7 +27,7 @@
         font-family: var(--font-family);
         font-style: normal;
         font-weight: 400;
-        font-size: clamp(18px, 2.105vw, 24px);
+        font-size: clamp(18px, 1.667vw, 24px);
         line-height: 150%;
         text-align: center;
         color: var(--color-d);
@@ -55,7 +54,7 @@
         font-family: var(--font-family2);
         font-style: normal;
         font-weight: 400;
-        font-size: clamp(28px, 3.772vw, 43px);
+        font-size: clamp(28px, 2.986vw, 43px);
         line-height: 130%;
         text-align: center;
         color: var(--color-a);
@@ -69,7 +68,7 @@
         font-family: var(--font-family);
         font-style: normal;
         font-weight: 700;
-        font-size: clamp(18px, 2.105vw, 24px);
+        font-size: clamp(18px, 1.667vw, 24px);
         line-height: 150%;
         text-align: center;
         color: var(--color-a);
@@ -88,7 +87,7 @@
         font-family: var(--font-family);
         font-style: normal;
         font-weight: 700;
-        font-size: clamp(18px, 2.105vw, 24px);
+        font-size: clamp(18px, 1.667vw, 24px);
         line-height: 150%;
         text-align: center;
         color: var(--color-a);

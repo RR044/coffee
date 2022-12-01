@@ -47,7 +47,7 @@ header {
             font-family: var(--font-family);
             font-style: normal;
             font-weight: 700;
-            font-size: clamp(14px, 1.579vw, 18px);
+            font-size: clamp(14px, 1.25vw, 18px);
             line-height: 160%;
             color: var(--color-a);
             opacity: 0.6;
@@ -56,7 +56,7 @@ header {
                 font-family: var(--font-family);
                 font-style: normal;
                 font-weight: 400;
-                font-size: clamp(14px, 1.579vw, 18px);
+                font-size: clamp(14px, 1.25vw, 18px);
                 line-height: 160%;
                 color: var(--color-d);
                 opacity: 1;
@@ -148,7 +148,7 @@ header {
         justify-content: space-between;
         opacity: 1;
         @include for-tablet {
-            opacity: 0;
+            display: none;
         }
         @include tablet {
             order: -1;
